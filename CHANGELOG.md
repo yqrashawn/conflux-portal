@@ -1,8 +1,21 @@
 # Changelog
 
 ## Current Develop Branch
+- Sync Version v0.0.9 RC (#58) from master (#60)
+- new sign logic (#62)
+- Change logo, mail, faq, tos links (#63)
 
 ## 0.0.9 Thu Mar 12 2020
+- Version v0.0.7 (#43)
+- Version v0.0.5 (#33)
+- Version v0.0.6 (#38)
+- update/cleanup packages (#46)
+- update readme.md (#45)
+- Fix: average estimate gas price unit (#47)
+- Version v0.0.8 (#49)
+- Fix: changelog.md (#50)
+- Fix e2e tests (#56)
+- Add rlp to support new version of testnet (#57)
 
 ## 0.0.8 Tue Feb 20 2020
 - update/cleanup packages (#46)
