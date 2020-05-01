@@ -56,7 +56,9 @@
     "storybook:build": "build-storybook -c .storybook -o .out",
     "storybook:deploy": "storybook-to-ghpages --existing-output-dir .out --remote storybook --branch master",
     "update-changelog": "./development/auto-changelog.sh",
-    "generate:migration": "./development/generate-migration.sh"
+    "generate:migration": "./development/generate-migration.sh",
+    "snyk-protect": "snyk protect",
+    "prepare": "yarn run snyk-protect"
   },
   "lint-staged": {
     "*.{js,json}": [
@@ -179,7 +181,8 @@
     "swappable-obj-proxy": "^1.1.0",
     "textarea-caret": "^3.0.1",
     "valid-url": "^1.0.9",
-    "web3-stream-provider": "^4.0.0"
+    "web3-stream-provider": "^4.0.0",
+    "snyk": "^1.316.1"
   },
   "devDependencies": {
     "@babel/core": "^7.5.5",
@@ -305,5 +308,6 @@
     "hooks": {
       "pre-commit": "lint-staged"
     }
-  }
+  },
+  "snyk": true
 }
