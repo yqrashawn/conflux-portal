@@ -97,8 +97,6 @@ steps:
     commands:
       - "source .buildkite/scripts/pre"
       - "docker-build"
-    # artifact_paths:
-    #   - "builds"
 
   - key: "prep-build-storybook"
     label: ":storybook: build storybook"
@@ -160,9 +158,11 @@ steps:
     commands:
       - "source .buildkite/scripts/pre"
       - "docker-build"
+      - "cpout .nyc_output"
+      - "cpout coverage .nyc_output"
     # artifact_paths:
-    #   - ".nyc_output"
-    #   - "coverage"
+    #   - ".nyc_output/**/*"
+    #   - "coverage/**/*"
 
   - key: "test-unit-global"
     label: ":mocha: unit test global"
@@ -214,9 +214,10 @@ steps:
     commands:
       - "source .buildkite/scripts/pre"
       - "docker-build"
+      - "cpout test-artifacts || true"
     parallelism: 9
-    # artifact_paths:
-    #   - "test-artifacts"
+    artifact_paths:
+      - "test-artifacts/**/*"
 
   - key: "e2e-firefox"
     label: ":firefox: firefox e2e test %n"
@@ -227,9 +228,10 @@ steps:
     commands:
       - "source .buildkite/scripts/pre"
       - "docker-build"
+      - "cpout test-artifacts || true"
     parallelism: 9
-    # artifact_paths:
-    #   - "test-artifacts"
+    artifact_paths:
+      - "test-artifacts/**/*"
 
   - key: "benchmark"
     label: ":chrome: benchmark"
@@ -240,5 +242,31 @@ steps:
     commands:
       - "source .buildkite/scripts/pre"
       - "docker-build"
-    # artifact_paths:
-    #   - "test-artifacts"
+      - "cpout test-artifacts || true"
+    artifact_paths:
+      - "test-artifacts/**/*"
+
+  - wait
+
+  - key: "all-test-pass"
+    label: ":white_check_mark:    all test pass"
+    command: "echo 'all test pass'"
+
+  - key: "prerelease"
+    label: ":arrow_upper_right:    prerelease"
+    env:
+      "DOCKER_PULL_DEPENDS_TARGET": "prep-build"
+    branches: "buildkite"
+    depends_on: "prep-build"
+    commands:
+      - "source .buildkite/scripts/pre"
+      - "docker-build"
+      - "cpout build-artifacts"
+      - "cpout test-artifacts || true"
+      - "cpout builds"
+      - "cpout dist"
+    artifact_paths:
+      - "build-artifacts/**/*"
+      - "builds/**/*"
+      - "test-artifacts/**/*"
+      - "dist/sourcemaps/*"
