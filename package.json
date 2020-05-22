@@ -19,6 +19,7 @@
     "format:js": "prettier-eslint {app,ui,test,development}/**/*.{js,json} --write",
     "sendwithprivatedapp": "node development/static-server.js test/e2e/send-eth-with-private-key-test --port 8080",
     "test:unit": "yarn test:prepare-conflux-local && mocha --timeout 10000 --exit --require test/env.js --file test/setup.js --recursive \"test/unit/**/*.js\" \"ui/app/**/*.test.js\"",
+    "test:unit:parallel": "yarn test:prepare-conflux-local && mocha --timeout 10000 --exit --require test/env.js --file test/setup.js --recursive \"test/unit/**/*.js\" \"ui/app/**/*.test.js\"",
     "test:unit:global": "yarn test:prepare-conflux-local && mocha --timeout 6000 --exit --require test/env.js --file test/setup.js --recursive mocha test/unit-global/*",
     "test:single": "mocha --exit --no-timeouts --require test/env.js --file test/setup.js",
     "test:integration": "yarn test:integration:build && yarn test:flat",
