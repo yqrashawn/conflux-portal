@@ -15177,6 +15177,19 @@ js-beautify@^1.10.2:
     mkdirp "~0.5.1"
     nopt "~4.0.1"
 
+js-conflux-sdk@^0.8.0:
+  version "0.8.0"
+  resolved "https://registry.yarnpkg.com/js-conflux-sdk/-/js-conflux-sdk-0.8.0.tgz#0321951a2f9fddaaf34cc4e6824a7996497c2c0e"
+  integrity sha512-6lDsB+Rb+odXR3HyxGcdj5ugWrOxLq9WJ5bdfOfbSBxemMU0L8VHBwb5Q/EzKba7mO2ZWJsi+MjL5wMoWZEuDQ==
+  dependencies:
+    "@babel/runtime" "^7.8.4"
+    esm "^3.2.25"
+    jsbi "^3.1.1"
+    keccak "^2.0.0"
+    lodash "^4.17.15"
+    secp256k1 "^3.7.1"
+    superagent "^5.1.0"
+
 js-conflux-sdk@^0.8.0-alpha:
   version "0.8.0-alpha"
   resolved "https://registry.yarnpkg.com/js-conflux-sdk/-/js-conflux-sdk-0.8.0-alpha.tgz#7d76ee0c0b658d9080489cbc84be48b0ce2b42fe"
