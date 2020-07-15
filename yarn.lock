@@ -1644,13 +1644,13 @@
     "@sentry/utils" "5.11.1"
     tslib "^1.9.3"
 
-"@sentry/integrations@^5.11.1":
-  version "5.11.1"
-  resolved "https://registry.yarnpkg.com/@sentry/integrations/-/integrations-5.11.1.tgz#6612efc620c187ba85a57c6e70e69d9474af7fb6"
-  integrity sha512-zubOE9zQ4qSutS0ZTnAteDnzbVcHSI2bXD/0nTD3t3ljY+OWgcluBXYCAeAp8vOv2qCoef5ySdQa1DBCW7NQ3Q==
+"@sentry/integrations@^5.17.0":
+  version "5.19.1"
+  resolved "https://registry.yarnpkg.com/@sentry/integrations/-/integrations-5.19.1.tgz#9c6680eceff95b9fb66ad18c2cf9fa2e9f0181b5"
+  integrity sha512-JMiYtHh6m50eMC8BHkcZZjl6/Nx2JVivhkLx6EGsbgNTpGlsODhrRt+kgRKFhPWhEjKlcjx+l6tmq90NbfLusg==
   dependencies:
-    "@sentry/types" "5.11.0"
-    "@sentry/utils" "5.11.1"
+    "@sentry/types" "5.19.1"
+    "@sentry/utils" "5.19.1"
     tslib "^1.9.3"
 
 "@sentry/minimal@5.11.1":
@@ -1667,12 +1667,25 @@
   resolved "https://registry.yarnpkg.com/@sentry/types/-/types-5.11.0.tgz#40f0f3174362928e033ddd9725d55e7c5cb7c5b6"
   integrity sha512-1Uhycpmeo1ZK2GLvrtwZhTwIodJHcyIS6bn+t4IMkN9MFoo6ktbAfhvexBDW/IDtdLlCGJbfm8nIZerxy0QUpg==
 
+"@sentry/types@5.19.1":
+  version "5.19.1"
+  resolved "https://registry.yarnpkg.com/@sentry/types/-/types-5.19.1.tgz#8762f668d3fc2416fbde31d15d13009544caeb54"
+  integrity sha512-M5MhTLnjqYFwxMwcFPBpBgYQqI9hCvtVuj/A+NvcBHpe7VWOXdn/Sys+zD6C76DWGFYQdw3OWCsZimP24dL8mA==
+
 "@sentry/utils@5.11.1":
   version "5.11.1"
   resolved "https://registry.yarnpkg.com/@sentry/utils/-/utils-5.11.1.tgz#aa19fcc234cf632257b2281261651d2fac967607"
   integrity sha512-O0Zl4R2JJh8cTkQ8ZL2cDqGCmQdpA5VeXpuBbEl1v78LQPkBDISi35wH4mKmLwMsLBtTVpx2UeUHBj0KO5aLlA==
   dependencies:
     "@sentry/types" "5.11.0"
+    tslib "^1.9.3"
+
+"@sentry/utils@5.19.1":
+  version "5.19.1"
+  resolved "https://registry.yarnpkg.com/@sentry/utils/-/utils-5.19.1.tgz#e1134db40e4bb9732251e515721cec7ee94d4d9c"
+  integrity sha512-neUiNBnZSHjWTZWy2QV02EHTx1C2L3DBPzRXlh0ca5xrI7LMBLmhkHlhebn1E5ky3PW1teqZTgmh0jZoL99TEA==
+  dependencies:
+    "@sentry/types" "5.19.1"
     tslib "^1.9.3"
 
 "@sindresorhus/is@^0.14.0":
@@ -15685,10 +15698,10 @@ js-conflux-sdk@0.10.1:
     secp256k1 "^3.7.1"
     superagent "^5.1.0"
 
-js-conflux-sdk@^0.10.3:
-  version "0.10.3"
-  resolved "https://registry.yarnpkg.com/js-conflux-sdk/-/js-conflux-sdk-0.10.3.tgz#99684665a4f1797b7c37458b3e6246fbd5d7ad72"
-  integrity sha512-oqrp778vXkumjKbBPAZQcA8uoPEBUw5XPs1j+1XwIdB9OzVMHYe726BgNEFfJ69sDWH0mAf3Aj8d8K61kxsK1g==
+js-conflux-sdk@^0.11.0:
+  version "0.11.0"
+  resolved "https://registry.yarnpkg.com/js-conflux-sdk/-/js-conflux-sdk-0.11.0.tgz#8f96d2838d14fbdc67766801a8a07be92d987625"
+  integrity sha512-00EpiuWToUWzAWLMJtk90n4KTjYpRXPLVutpem+tw2uN2dKWw8COVgeAbfrsXtCBztSgmjGVwioIPyvlzSYKpw==
   dependencies:
     "@babel/runtime" "^7.8.4"
     big.js "^5.2.2"
