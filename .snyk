@@ -1,0 +1,178 @@
+# Snyk (https://snyk.io) policy file, patches or ignores known vulnerabilities.
+version: v1.19.0
+ignore: {}
+# patches apply the minimum changes required to fix a vulnerability
+patch:
+  SNYK-JS-LODASH-567746:
+    - '@material-ui/core > lodash':
+        patched: '2020-08-31T07:54:43.111Z'
+    - js-conflux-sdk > lodash:
+        patched: '2020-08-31T07:54:43.111Z'
+    - react-dnd > lodash:
+        patched: '2020-08-31T07:54:43.111Z'
+    - json-rpc-engine > async > lodash:
+        patched: '2020-08-31T07:54:43.111Z'
+    - cfx-keyring-controller > js-conflux-sdk > lodash:
+        patched: '2020-08-31T07:54:43.111Z'
+    - react-dnd > dnd-core > lodash:
+        patched: '2020-08-31T07:54:43.111Z'
+    - '@yqrashawn/cfx-json-rpc-middleware > ethereumjs-block > async > lodash':
+        patched: '2020-08-31T07:54:43.111Z'
+    - '@yqrashawn/cfx-json-rpc-middleware > ethereumjs-vm > async > lodash':
+        patched: '2020-08-31T07:54:43.111Z'
+    - '@yqrashawn/cfx-json-rpc-middleware > json-rpc-engine > async > lodash':
+        patched: '2020-08-31T07:54:43.111Z'
+    - '@yqrashawn/conflux-portal-inpage-provider > json-rpc-engine > async > lodash':
+        patched: '2020-08-31T07:54:43.111Z'
+    - eth-json-rpc-filters > json-rpc-engine > async > lodash:
+        patched: '2020-08-31T07:54:43.111Z'
+    - eth-json-rpc-infura > json-rpc-engine > async > lodash:
+        patched: '2020-08-31T07:54:43.111Z'
+    - gaba > web3-provider-engine > async > lodash:
+        patched: '2020-08-31T07:54:43.111Z'
+    - rpc-cap > json-rpc-engine > async > lodash:
+        patched: '2020-08-31T07:54:43.111Z'
+    - eth-json-rpc-filters > eth-json-rpc-middleware > ethereumjs-block > async > lodash:
+        patched: '2020-08-31T07:54:43.111Z'
+    - eth-json-rpc-infura > eth-json-rpc-middleware > ethereumjs-block > async > lodash:
+        patched: '2020-08-31T07:54:43.111Z'
+    - gaba > web3-provider-engine > ethereumjs-block > async > lodash:
+        patched: '2020-08-31T07:54:43.111Z'
+    - '@yqrashawn/cfx-json-rpc-middleware > ethereumjs-vm > async-eventemitter > async > lodash':
+        patched: '2020-08-31T07:54:43.111Z'
+    - '@yqrashawn/cfx-json-rpc-middleware > ethereumjs-vm > ethereumjs-block > async > lodash':
+        patched: '2020-08-31T07:54:43.111Z'
+    - eth-json-rpc-filters > eth-json-rpc-middleware > ethereumjs-vm > async > lodash:
+        patched: '2020-08-31T07:54:43.111Z'
+    - eth-json-rpc-infura > eth-json-rpc-middleware > ethereumjs-vm > async > lodash:
+        patched: '2020-08-31T07:54:43.111Z'
+    - gaba > web3-provider-engine > ethereumjs-vm > async > lodash:
+        patched: '2020-08-31T07:54:43.111Z'
+    - eth-json-rpc-filters > eth-json-rpc-middleware > json-rpc-engine > async > lodash:
+        patched: '2020-08-31T07:54:43.111Z'
+    - eth-json-rpc-infura > eth-json-rpc-middleware > json-rpc-engine > async > lodash:
+        patched: '2020-08-31T07:54:43.111Z'
+    - gaba > eth-json-rpc-infura > json-rpc-engine > async > lodash:
+        patched: '2020-08-31T07:54:43.111Z'
+    - rpc-cap > gaba > web3-provider-engine > async > lodash:
+        patched: '2020-08-31T07:54:43.111Z'
+    - eth-block-tracker > @babel/plugin-transform-runtime > @babel/helper-module-imports > @babel/types > lodash:
+        patched: '2020-08-31T07:54:43.111Z'
+    - react-dnd > dnd-core > @types/redux > redux > lodash:
+        patched: '2020-08-31T07:54:43.111Z'
+    - gaba > eth-json-rpc-infura > eth-json-rpc-middleware > ethereumjs-block > async > lodash:
+        patched: '2020-08-31T07:54:43.111Z'
+    - gaba > web3-provider-engine > eth-json-rpc-middleware > ethereumjs-block > async > lodash:
+        patched: '2020-08-31T07:54:43.111Z'
+    - rpc-cap > gaba > web3-provider-engine > ethereumjs-block > async > lodash:
+        patched: '2020-08-31T07:54:43.111Z'
+    - eth-json-rpc-filters > eth-json-rpc-middleware > ethereumjs-vm > async-eventemitter > async > lodash:
+        patched: '2020-08-31T07:54:43.111Z'
+    - eth-json-rpc-infura > eth-json-rpc-middleware > ethereumjs-vm > async-eventemitter > async > lodash:
+        patched: '2020-08-31T07:54:43.111Z'
+    - gaba > web3-provider-engine > ethereumjs-vm > async-eventemitter > async > lodash:
+        patched: '2020-08-31T07:54:43.111Z'
+    - eth-json-rpc-filters > eth-json-rpc-middleware > ethereumjs-vm > ethereumjs-block > async > lodash:
+        patched: '2020-08-31T07:54:43.111Z'
+    - eth-json-rpc-infura > eth-json-rpc-middleware > ethereumjs-vm > ethereumjs-block > async > lodash:
+        patched: '2020-08-31T07:54:43.111Z'
+    - gaba > web3-provider-engine > ethereumjs-vm > ethereumjs-block > async > lodash:
+        patched: '2020-08-31T07:54:43.111Z'
+    - gaba > eth-json-rpc-infura > eth-json-rpc-middleware > ethereumjs-vm > async > lodash:
+        patched: '2020-08-31T07:54:43.111Z'
+    - gaba > web3-provider-engine > eth-json-rpc-middleware > ethereumjs-vm > async > lodash:
+        patched: '2020-08-31T07:54:43.111Z'
+    - rpc-cap > gaba > web3-provider-engine > ethereumjs-vm > async > lodash:
+        patched: '2020-08-31T07:54:43.111Z'
+    - gaba > eth-json-rpc-infura > eth-json-rpc-middleware > json-rpc-engine > async > lodash:
+        patched: '2020-08-31T07:54:43.111Z'
+    - gaba > web3-provider-engine > eth-json-rpc-middleware > json-rpc-engine > async > lodash:
+        patched: '2020-08-31T07:54:43.111Z'
+    - gaba > web3-provider-engine > eth-json-rpc-filters > json-rpc-engine > async > lodash:
+        patched: '2020-08-31T07:54:43.111Z'
+    - gaba > web3-provider-engine > eth-json-rpc-infura > json-rpc-engine > async > lodash:
+        patched: '2020-08-31T07:54:43.111Z'
+    - rpc-cap > gaba > eth-json-rpc-infura > json-rpc-engine > async > lodash:
+        patched: '2020-08-31T07:54:43.111Z'
+    - eth-token-tracker > eth-block-tracker > @babel/plugin-transform-runtime > @babel/helper-module-imports > @babel/types > lodash:
+        patched: '2020-08-31T07:54:43.111Z'
+    - gaba > web3-provider-engine > eth-json-rpc-filters > eth-json-rpc-middleware > ethereumjs-block > async > lodash:
+        patched: '2020-08-31T07:54:43.111Z'
+    - gaba > web3-provider-engine > eth-json-rpc-infura > eth-json-rpc-middleware > ethereumjs-block > async > lodash:
+        patched: '2020-08-31T07:54:43.111Z'
+    - rpc-cap > gaba > eth-json-rpc-infura > eth-json-rpc-middleware > ethereumjs-block > async > lodash:
+        patched: '2020-08-31T07:54:43.111Z'
+    - rpc-cap > gaba > web3-provider-engine > eth-json-rpc-middleware > ethereumjs-block > async > lodash:
+        patched: '2020-08-31T07:54:43.111Z'
+    - gaba > eth-json-rpc-infura > eth-json-rpc-middleware > ethereumjs-vm > async-eventemitter > async > lodash:
+        patched: '2020-08-31T07:54:43.111Z'
+    - gaba > web3-provider-engine > eth-json-rpc-middleware > ethereumjs-vm > async-eventemitter > async > lodash:
+        patched: '2020-08-31T07:54:43.111Z'
+    - rpc-cap > gaba > web3-provider-engine > ethereumjs-vm > async-eventemitter > async > lodash:
+        patched: '2020-08-31T07:54:43.111Z'
+    - gaba > eth-json-rpc-infura > eth-json-rpc-middleware > ethereumjs-vm > ethereumjs-block > async > lodash:
+        patched: '2020-08-31T07:54:43.111Z'
+    - gaba > web3-provider-engine > eth-json-rpc-middleware > ethereumjs-vm > ethereumjs-block > async > lodash:
+        patched: '2020-08-31T07:54:43.111Z'
+    - rpc-cap > gaba > web3-provider-engine > ethereumjs-vm > ethereumjs-block > async > lodash:
+        patched: '2020-08-31T07:54:43.111Z'
+    - gaba > web3-provider-engine > eth-json-rpc-filters > eth-json-rpc-middleware > ethereumjs-vm > async > lodash:
+        patched: '2020-08-31T07:54:43.111Z'
+    - gaba > web3-provider-engine > eth-json-rpc-infura > eth-json-rpc-middleware > ethereumjs-vm > async > lodash:
+        patched: '2020-08-31T07:54:43.111Z'
+    - rpc-cap > gaba > eth-json-rpc-infura > eth-json-rpc-middleware > ethereumjs-vm > async > lodash:
+        patched: '2020-08-31T07:54:43.111Z'
+    - rpc-cap > gaba > web3-provider-engine > eth-json-rpc-middleware > ethereumjs-vm > async > lodash:
+        patched: '2020-08-31T07:54:43.111Z'
+    - gaba > web3-provider-engine > eth-json-rpc-filters > eth-json-rpc-middleware > json-rpc-engine > async > lodash:
+        patched: '2020-08-31T07:54:43.111Z'
+    - gaba > web3-provider-engine > eth-json-rpc-infura > eth-json-rpc-middleware > json-rpc-engine > async > lodash:
+        patched: '2020-08-31T07:54:43.111Z'
+    - rpc-cap > gaba > eth-json-rpc-infura > eth-json-rpc-middleware > json-rpc-engine > async > lodash:
+        patched: '2020-08-31T07:54:43.111Z'
+    - rpc-cap > gaba > web3-provider-engine > eth-json-rpc-middleware > json-rpc-engine > async > lodash:
+        patched: '2020-08-31T07:54:43.111Z'
+    - rpc-cap > gaba > web3-provider-engine > eth-json-rpc-filters > json-rpc-engine > async > lodash:
+        patched: '2020-08-31T07:54:43.111Z'
+    - rpc-cap > gaba > web3-provider-engine > eth-json-rpc-infura > json-rpc-engine > async > lodash:
+        patched: '2020-08-31T07:54:43.111Z'
+    - gaba > web3-provider-engine > eth-block-tracker > @babel/plugin-transform-runtime > @babel/helper-module-imports > @babel/types > lodash:
+        patched: '2020-08-31T07:54:43.111Z'
+    - rpc-cap > gaba > web3-provider-engine > eth-json-rpc-filters > eth-json-rpc-middleware > ethereumjs-block > async > lodash:
+        patched: '2020-08-31T07:54:43.111Z'
+    - rpc-cap > gaba > web3-provider-engine > eth-json-rpc-infura > eth-json-rpc-middleware > ethereumjs-block > async > lodash:
+        patched: '2020-08-31T07:54:43.111Z'
+    - gaba > web3-provider-engine > eth-json-rpc-filters > eth-json-rpc-middleware > ethereumjs-vm > async-eventemitter > async > lodash:
+        patched: '2020-08-31T07:54:43.111Z'
+    - gaba > web3-provider-engine > eth-json-rpc-infura > eth-json-rpc-middleware > ethereumjs-vm > async-eventemitter > async > lodash:
+        patched: '2020-08-31T07:54:43.111Z'
+    - rpc-cap > gaba > eth-json-rpc-infura > eth-json-rpc-middleware > ethereumjs-vm > async-eventemitter > async > lodash:
+        patched: '2020-08-31T07:54:43.111Z'
+    - rpc-cap > gaba > web3-provider-engine > eth-json-rpc-middleware > ethereumjs-vm > async-eventemitter > async > lodash:
+        patched: '2020-08-31T07:54:43.111Z'
+    - gaba > web3-provider-engine > eth-json-rpc-filters > eth-json-rpc-middleware > ethereumjs-vm > ethereumjs-block > async > lodash:
+        patched: '2020-08-31T07:54:43.111Z'
+    - gaba > web3-provider-engine > eth-json-rpc-infura > eth-json-rpc-middleware > ethereumjs-vm > ethereumjs-block > async > lodash:
+        patched: '2020-08-31T07:54:43.111Z'
+    - rpc-cap > gaba > eth-json-rpc-infura > eth-json-rpc-middleware > ethereumjs-vm > ethereumjs-block > async > lodash:
+        patched: '2020-08-31T07:54:43.111Z'
+    - rpc-cap > gaba > web3-provider-engine > eth-json-rpc-middleware > ethereumjs-vm > ethereumjs-block > async > lodash:
+        patched: '2020-08-31T07:54:43.111Z'
+    - rpc-cap > gaba > web3-provider-engine > eth-json-rpc-filters > eth-json-rpc-middleware > ethereumjs-vm > async > lodash:
+        patched: '2020-08-31T07:54:43.111Z'
+    - rpc-cap > gaba > web3-provider-engine > eth-json-rpc-infura > eth-json-rpc-middleware > ethereumjs-vm > async > lodash:
+        patched: '2020-08-31T07:54:43.111Z'
+    - rpc-cap > gaba > web3-provider-engine > eth-json-rpc-filters > eth-json-rpc-middleware > json-rpc-engine > async > lodash:
+        patched: '2020-08-31T07:54:43.111Z'
+    - rpc-cap > gaba > web3-provider-engine > eth-json-rpc-infura > eth-json-rpc-middleware > json-rpc-engine > async > lodash:
+        patched: '2020-08-31T07:54:43.111Z'
+    - rpc-cap > gaba > web3-provider-engine > eth-block-tracker > @babel/plugin-transform-runtime > @babel/helper-module-imports > @babel/types > lodash:
+        patched: '2020-08-31T07:54:43.111Z'
+    - rpc-cap > gaba > web3-provider-engine > eth-json-rpc-filters > eth-json-rpc-middleware > ethereumjs-vm > async-eventemitter > async > lodash:
+        patched: '2020-08-31T07:54:43.111Z'
+    - rpc-cap > gaba > web3-provider-engine > eth-json-rpc-infura > eth-json-rpc-middleware > ethereumjs-vm > async-eventemitter > async > lodash:
+        patched: '2020-08-31T07:54:43.111Z'
+    - rpc-cap > gaba > web3-provider-engine > eth-json-rpc-filters > eth-json-rpc-middleware > ethereumjs-vm > ethereumjs-block > async > lodash:
+        patched: '2020-08-31T07:54:43.111Z'
+    - rpc-cap > gaba > web3-provider-engine > eth-json-rpc-infura > eth-json-rpc-middleware > ethereumjs-vm > ethereumjs-block > async > lodash:
+        patched: '2020-08-31T07:54:43.111Z'
