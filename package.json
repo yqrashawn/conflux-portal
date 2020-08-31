@@ -59,7 +59,9 @@
     "storybook:build": "build-storybook -c .storybook -o .out",
     "storybook:deploy": "storybook-to-ghpages --existing-output-dir .out --remote storybook --branch master",
     "update-changelog": "./development/auto-changelog.sh",
-    "generate:migration": "./development/generate-migration.sh"
+    "generate:migration": "./development/generate-migration.sh",
+    "snyk-protect": "snyk protect",
+    "prepare": "yarn run snyk-protect"
   },
   "lint-staged": {
     "*.{js,json}": [
@@ -126,7 +128,7 @@
     "ethjs-rpc": "0.1.9",
     "extension-port-stream": "^1.0.0",
     "extensionizer": "^1.0.1",
-    "fast-json-patch": "^2.0.4",
+    "fast-json-patch": "^2.2.1",
     "fuse.js": "^3.2.0",
     "gaba": "^1.10.0",
     "human-standard-token-abi": "^2.0.0",
@@ -135,7 +137,7 @@
     "json-rpc-engine": "^5.1.6",
     "json-rpc-middleware-stream": "^2.1.1",
     "jsonschema": "^1.2.5",
-    "lodash": "^4.17.15",
+    "lodash": "^4.17.20",
     "loglevel": "^1.4.1",
     "luxon": "^1.8.2",
     "metamask-logo": "^2.1.4",
@@ -181,7 +183,8 @@
     "swappable-obj-proxy": "^1.1.0",
     "textarea-caret": "^3.0.1",
     "valid-url": "^1.0.9",
-    "web3-stream-provider": "^4.0.0"
+    "web3-stream-provider": "^4.0.0",
+    "snyk": "^1.386.0"
   },
   "devDependencies": {
     "@babel/core": "^7.5.5",
@@ -307,5 +310,6 @@
     "hooks": {
       "pre-commit": "yarn lint:changed:fix"
     }
-  }
+  },
+  "snyk": true
 }
